@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Inventory</title>
+    <link rel="stylesheet" href="../css/tacodashboard.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Minute Taco</h1>
+    <button class="logout-btn" onclick="window.location.href='login.html'">Logout</button>
+</header>
+
+<div id="sidebar" class="sidebar">
+
+    <button id="toggleSidebar" class="toggle-btn">☰</button>
+
+    <ul class="sidebar-menu">
+        <li><a href="tacodashboard.html">Dashboard</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+    </ul>
+
+</div>
+
+<div style="margin-left:220px; padding:40px">
+
+<h2>Inventory</h2>
+
+<div class="inventory-form">
+
+<label>Product Name</label>
+<input type="text" id="productName">
+
+<label>Product Price</label>
+<input type="number" id="productPrice">
+
+<label>Product Quantity</label>
+<input type="number" id="productQty">
+
+<button id="addProduct">Add Product</button>
+
+</div>
+
+<h3>Product List</h3>
+
+<table border="1" width="100%" id="inventoryTable">
+
+<thead>
+<tr>
+<th>Name</th>
+<th>Price</th>
+<th>Quantity</th>
+</tr>
+</thead>
+
+<tbody></tbody>
+
+</table>
+
+</div>
+
+<script src="../js/inventory.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Taco Dashboard</title>
+    <link rel="stylesheet" href="../css/tacodashboard.css">
+    <link rel="icon" type="image/x-icon" href="../favicon_io/favicon.ico">
+</head>
+<body>
+   <header>
+
+<div id="sidebar" class="sidebar">
+
+    <button id="toggleSidebar" class="toggle-btn">☰</button>
+
+    <ul class="sidebar-menu">
+        <li><a href="tacodashboard.html">Dashboard</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+    </ul>
+
+</div>
+
+    <h1>Minute Taco</h1>
+    <div id="live-clock" class="time"></div>
+    <button class="logout-btn" onclick="window.location.href='login.html'">Logout</button>
+
+</header>
+
+    <div class="main-container">
+        <section class="menu-section">
+            <h2>Select Your Tacos</h2>
+            <div id="menu-container" class="grid-container">
+                </div>
+        </section>
+
+        <aside class="cart-section">
+            <h2>Your Order</h2>
+            <ul id="cart-items">
+                </ul>
+            <hr>
+            <div class="total-container">
+                <strong>Total: $<span id="total-price">0.00</span></strong>
+            </div>
+            <button id="checkout-btn" class="checkout-btn">Place Order</button>
+        </aside>
+    </div>
+
+<div id="receipt-modal" class="modal">
+    <div class="modal-content">
+        <h2>Order Confirmed! </h2>
+        <div id="receipt-body"></div>
+        <button onclick="closeModal()" class="checkout-btn">Awesome, thanks!</button>
+    </div>
+</div>
+    <script src="../js/tacodashboard.js"></script>
+</body>
+</html>
